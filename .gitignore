@@ -1,0 +1,17 @@
+# Vivado / Xilinx temporary files and logs
+*.log
+*.jou
+*.str
+*.pb
+*.dir/
+.Xil/
+xsim.dir/
+*.app
+*.elf
+*.bit
+*.mcs
+
+# IDE and System files
+.DS_Store
+.vscode/
+*.swp
