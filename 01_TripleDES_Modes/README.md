@@ -1,4 +1,4 @@
-# HW03 — Triple-DES Block Cipher with Modes of Operation
+# Triple-DES Block Cipher with Modes of Operation
 
 ## Problem
 Implement the DES block cipher from its algorithmic primitives (Feistel network, S-boxes,

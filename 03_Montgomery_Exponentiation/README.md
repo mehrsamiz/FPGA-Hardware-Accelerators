@@ -1,4 +1,4 @@
-# HW05 — Montgomery Modular Exponentiation with Karatsuba Multiplier
+# Montgomery Modular Exponentiation with Karatsuba Multiplier
 
 ## Problem
 Implement modular exponentiation `C = A^E mod N` in hardware — with the constraint that

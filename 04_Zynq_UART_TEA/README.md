@@ -1,4 +1,4 @@
-# HW06 — TEA Hardware Accelerator on Zynq: AXI4-Lite SoC Integration
+# TEA Hardware Accelerator on Zynq: AXI4-Lite SoC Integration
 
 ## Problem
 Take a cryptographic core off the simulator and put it on real hardware: implement the Tiny

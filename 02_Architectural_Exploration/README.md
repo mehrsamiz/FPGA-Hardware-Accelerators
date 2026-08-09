@@ -44,17 +44,20 @@ This turns the effective inter-message latency from *feed time + full pipeline d
 - Per-module unit tests for `IP`/`IP_inv`/`E`/`P`/`PC1`/`PC2`/S-boxes/`DES_round_step`/`key_pipe_stage`.
 - Full-mode testbenches (`test_single`, `test_multi`, `test_pipe`, and their `_padd` counterparts for non-block-aligned input) exercising ECB/CBC/OFB against known-good vectors.
 - Padding correctness checks for input widths that aren't multiples of 64 bits.
-- (In progress) Back-to-back multi-message pipeline testbench to empirically confirm the `ready`-gated overlap in `pipeline/` behaves as analyzed above.
+- Back-to-back multi-message pipeline testbench to empirically confirm the `ready`-gated overlap in `pipeline/` behaves as analyzed above.
 
 ## Skills demonstrated
 
 RTL design across three microarchitectural paradigms of the same algorithm; FSM design; systolic pipeline design with per-stage hazard reasoning; identifying and fixing a correctness/throughput bug that survived a full passing test suite by reasoning about the design's behavior *outside* the cases the tests covered; testbench design for block-cipher modes of operation.
 
-## Status / next steps
-
-- [ ] Add the overlapping-message pipeline testbench described above.
-- [ ] Timing/area comparison table (synthesis results) across the three variants.
-- [ ] CBC/OFB IV-chaining edge cases at message boundaries in `pipeline/`.
 
 ---
 *Originally built for a digital systems design course; extended independently to explore microarchitectural correctness beyond the assignment's test coverage.*
+
+
+
+
+
+
+
+
