@@ -52,6 +52,8 @@ All 4 hardware/software comparisons pass, including edge cases (all-zero and all
 chosen specifically to stress carry chains and catch stuck-at faults that mid-range test
 vectors wouldn't reveal.
 
+![Detection result](docs/result.png)
+
 ## Files
 ```
 hw/
