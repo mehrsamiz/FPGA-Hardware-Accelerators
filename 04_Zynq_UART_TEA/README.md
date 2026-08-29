@@ -7,8 +7,6 @@ Zynq SoC through a custom AXI4-Lite slave, and verify correctness by running pla
 pairs through both a C software model on the processor and the hardware core over the fabric,
 comparing results live.
 
-This is the point in the course where the work stops being "does the testbench pass" and
-becomes "does a real processor, talking over a real bus, get the right answer from silicon."
 
 ## Architecture
 ```
