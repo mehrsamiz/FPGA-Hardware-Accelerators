@@ -4,7 +4,7 @@ A from-scratch Verilog implementation of **Two-Key Triple DES** (`C = E_K1(D_K2(
 
 ## Why this repo is here
 
-Most student DES implementations stop at "the testbench passes." This one didn't stop there: the pipelined version initially passed every provided testbench while still not being a *true* pipeline — it could stream blocks within a single message but silently forced a full pipeline drain between messages, so back-to-back throughput was no better than the multi-cycle design. Finding and fixing that (see [`pipeline/`](#pipeline--the-interesting-part) below) is the part of this project I'm most glad happened, because it's the kind of bug that only shows up once you think about the design at the level of overlapping operations rather than single test vectors — which is exactly the kind of scrutiny real pipelined hardware demands.
+Most DES implementations stop at "the testbench passes." This one didn't stop there: the pipelined version initially passed every provided testbench while still not being a *true* pipeline — it could stream blocks within a single message but silently forced a full pipeline drain between messages, so back-to-back throughput was no better than the multi-cycle design. Finding and fixing that (see [`pipeline/`](#pipeline--the-interesting-part) below) is the part of this project I'm most glad happened, because it's the kind of bug that only shows up once you think about the design at the level of overlapping operations rather than single test vectors — which is exactly the kind of scrutiny real pipelined hardware demands.
 
 ## Repository structure
 
